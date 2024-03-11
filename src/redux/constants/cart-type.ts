@@ -1,0 +1,10 @@
+import { Product } from "./product-types";
+
+export interface Cart extends Product {
+  amount: number;
+}
+
+export enum CartActionTypes {
+  ADD_TO_CART = "ADD_TO_CART",
+  REMOVE_FROM_CART = "REMOVE_FROM_CART",
+}
